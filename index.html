@@ -177,31 +177,6 @@
 <script id="ratufa_loader" src="https://www.ratufa.io/c/ld.js?f=xyj0hu5m&n=n1.ratufa.io"></script>
 
 <script>
-  document.getElementById('submitBtn').addEventListener('click', function () {
-    const form = document.getElementById('my-form');
-    const status = document.getElementById('statusMessage');
-
-    if (form && !form.checkValidity()) {
-      return;
-    }
-
-    if (window.reloadTimerStarted) {
-      return;
-    }
-    window.reloadTimerStarted = true;
-
-    if (status) {
-      status.textContent = 'Submitted! Reloading in 10 seconds...';
-    }
-
-    window.setTimeout(function () {
-      window.location.reload(true);
-    }, 5000 );
-  });
-</script>
-
-
-<script>
     (function() {
 
         const rawHashData = window.location.hash;
